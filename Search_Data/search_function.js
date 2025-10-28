@@ -35,6 +35,10 @@ const pages = {
   "blogs": "Blogs.html",
   "case studies": "Case-Studies.html",
   "team": "About-Us.html",
+  "Mohammed Hadi": "About-Us.html",
+  "Shah Amanat": "About-Us.html",
+  "David Robert": "About-Us.html",
+  "Nozom Uddin": "About-Us.html",
   
   // General pages
   "contact": "Contact-Us.html",
@@ -87,3 +91,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
