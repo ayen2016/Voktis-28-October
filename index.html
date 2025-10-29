@@ -1857,118 +1857,6 @@ network Access provides is valuable.</div>
 
 	
 
-<!-- Top Language Bar (Right-Aligned, White Text Flags) -->
-<div id="top-language-bar">
-  <div class="language-container">
-    <span class="language-label">🌐 Language:</span>
-    <button class="lang-btn" data-lang="en">EN</button>
-    <button class="lang-btn" data-lang="bn">BN</button>
-    <button class="lang-btn" data-lang="ar">AR</button>
-  </div>
-</div>
-
-<!-- Push content down so top bar does not overlap -->
-<div style="height:50px;"></div>
-
-<!-- Montserrat font -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-<!-- Google Translate Initialization -->
-<div id="google_translate_element" style="display:none;"></div>
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-    pageLanguage: 'en',
-    includedLanguages: 'en,bn,ar',
-    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-  }, 'google_translate_element');
-}
-
-// Reliable switchLanguage function
-function switchLanguage(lang) {
-  var checkInterval = setInterval(function() {
-    var frame = document.querySelector('iframe.goog-te-menu-frame');
-    if(frame){
-      clearInterval(checkInterval);
-      var innerDoc = frame.contentDocument || frame.contentWindow.document;
-      var langElements = innerDoc.querySelectorAll('.goog-te-menu2-item span.text');
-      langElements.forEach(function(el){
-        if(el.innerText.toLowerCase().includes(lang.toLowerCase())){
-          el.click();
-        }
-      });
-    }
-  }, 300); // check every 300ms until iframe is ready
-}
-
-// Attach click events to language buttons
-document.addEventListener('DOMContentLoaded', function(){
-  document.querySelectorAll('.lang-btn').forEach(function(btn){
-    btn.addEventListener('click', function(){
-      var lang = this.getAttribute('data-lang');
-      if(lang==='en') lang='english';
-      if(lang==='bn') lang='bengali';
-      if(lang==='ar') lang='arabic';
-      switchLanguage(lang);
-    });
-  });
-});
-</script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<!-- Styling -->
-<style>
-#top-language-bar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 9999;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #172F62;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 0 0 5px 5px;
-  box-sizing: border-box;
-  display: inline-block;
-}
-
-.language-container {
-  display: flex;
-  align-items: center;
-}
-
-.language-label {
-  margin-right: 8px;
-  font-weight: 500;
-}
-
-.lang-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  margin-left: 5px;
-  padding: 2px 5px;
-  color: white;
-  font-weight: 500;
-  transition: transform 0.2s;
-}
-
-.lang-btn:hover {
-  transform: scale(1.2);
-}
-
-/* Hide Google Translate banner */
-.goog-te-banner-frame.skiptranslate { display: none !important; }
-body { top: 0 !important; }
-
-/* Responsive */
-@media(max-width:768px){
-  #top-language-bar { padding:6px 10px; }
-  .language-label { font-size:13px; }
-  .lang-btn { font-size:14px; margin-left:3px; }
-}
-</style>
 
 
 	
@@ -1982,6 +1870,7 @@ body { top: 0 !important; }
 
 </body>
 </html>
+
 
 
 
