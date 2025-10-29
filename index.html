@@ -1867,7 +1867,7 @@ network Access provides is valuable.</div>
   </div>
 </div>
 
-<!-- Push content down -->
+<!-- Push content down so top bar does not overlap -->
 <div style="height:50px;"></div>
 
 <!-- Montserrat font -->
@@ -1884,18 +1884,24 @@ function googleTranslateElementInit() {
   }, 'google_translate_element');
 }
 
+// Reliable switchLanguage function: waits for iframe to load
 function switchLanguage(lang) {
-  var frame = document.querySelector('iframe.goog-te-menu-frame');
-  if (!frame) { alert("Please wait for Google Translate to load."); return; }
-  var innerDoc = frame.contentDocument || frame.contentWindow.document;
-  var langElements = innerDoc.querySelectorAll('.goog-te-menu2-item span.text');
-  langElements.forEach(function(el){
-    if(el.innerText.toLowerCase().includes(lang.toLowerCase())){
-      el.click();
+  var checkInterval = setInterval(function() {
+    var frame = document.querySelector('iframe.goog-te-menu-frame');
+    if(frame){
+      clearInterval(checkInterval);
+      var innerDoc = frame.contentDocument || frame.contentWindow.document;
+      var langElements = innerDoc.querySelectorAll('.goog-te-menu2-item span.text');
+      langElements.forEach(function(el){
+        if(el.innerText.toLowerCase().includes(lang.toLowerCase())){
+          el.click();
+        }
+      });
     }
-  });
+  }, 500); // checks every 500ms until iframe is ready
 }
 
+// Attach click events to language buttons
 document.addEventListener('DOMContentLoaded', function(){
   document.querySelectorAll('.lang-btn').forEach(function(btn){
     btn.addEventListener('click', function(){
@@ -1943,7 +1949,7 @@ document.addEventListener('DOMContentLoaded', function(){
   font-size: 16px;
   margin-left: 5px;
   padding: 2px 5px;
-  color: white; /* WHITE TEXT */
+  color: white;
   font-weight: 500;
   transition: transform 0.2s;
 }
@@ -1952,7 +1958,7 @@ document.addEventListener('DOMContentLoaded', function(){
   transform: scale(1.2);
 }
 
-/* Hide Google banner */
+/* Hide Google Translate banner */
 .goog-te-banner-frame.skiptranslate { display: none !important; }
 body { top: 0 !important; }
 
@@ -1977,6 +1983,7 @@ body { top: 0 !important; }
 
 </body>
 </html>
+
 
 
 
