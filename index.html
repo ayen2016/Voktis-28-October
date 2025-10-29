@@ -1884,7 +1884,7 @@ function googleTranslateElementInit() {
   }, 'google_translate_element');
 }
 
-// Reliable switchLanguage function: waits for iframe to load
+// Reliable switchLanguage function
 function switchLanguage(lang) {
   var checkInterval = setInterval(function() {
     var frame = document.querySelector('iframe.goog-te-menu-frame');
@@ -1898,7 +1898,7 @@ function switchLanguage(lang) {
         }
       });
     }
-  }, 500); // checks every 500ms until iframe is ready
+  }, 300); // check every 300ms until iframe is ready
 }
 
 // Attach click events to language buttons
@@ -1971,7 +1971,6 @@ body { top: 0 !important; }
 </style>
 
 
-
 	
 
 
@@ -1983,6 +1982,7 @@ body { top: 0 !important; }
 
 </body>
 </html>
+
 
 
 
