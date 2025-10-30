@@ -69,7 +69,8 @@
 :root {
 	
 	 /* #0b5adb in decimal RGB */
-  --main-color: rgb(13, 48, 148);
+  /* --main-color: rgb(11,90,219); */
+  --main-color: #172F62;
   --main-color-rgb:11,90,219;
  
   /* #0896fc in decimal RGB */
@@ -497,6 +498,8 @@
   /* #000000 in decimal RGB */
   --black-color:rgb(0,0,0);
   --black-color-rgb:0,0,0;
+  
+
   
   
   /* Fonts */
@@ -1859,6 +1862,7 @@ img{
 	width:34px;
 	height:22px;
 	background:url(../images/icons/separator.png) no-repeat;
+	
 }
 
 .sec-title_heading{
@@ -1934,8 +1938,10 @@ img{
 	text-transform:capitalize;
 	box-shadow:0px 0px 15px rgba(0,0,0,0.10);
 	
-	color:var(--color-thirtytwo);
-	background: linear-gradient(90deg, var(--color-thirtythree) 0%, var(--color-thirtytwo) 100%);
+	/* color:var(--color-thirtytwo); */
+	color:#172F62;
+	/* background: linear-gradient(90deg, var(--color-thirtythree) 0%, var(--color-thirtytwo) 100%); */
+	background: linear-gradient(90deg, #172f62 0%, #172f62 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -2140,5 +2146,4 @@ img{
 .ui-menu-item:hover{
 	background-color:var(--main-color);
 }
-
 
