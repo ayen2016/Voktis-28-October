@@ -51,7 +51,8 @@
 	display:inline-block;
 	color:var(--white-color);
     background: var(--color-two);
-    background: linear-gradient(to top right, var(--color-two) 0%, var(--color-seven) 100%);
+    /* background: linear-gradient(to top right, var(--color-two) 0%, var(--color-seven) 100%); */
+	background: linear-gradient(to left, #172f62 0%, #1e3a7a 100%);
 }
 
 .main-footer .footer-widget h4{
@@ -71,7 +72,9 @@
 	height:3px;
 	width:40px;
 	background: var(--color-two);
-    background: linear-gradient(to top right, var(--color-two) 0%, var(--color-seven) 100%);
+    /* background: linear-gradient(to top right, var(--color-two) 0%, var(--color-seven) 100%); */
+	background: linear-gradient(to left, #172f62 0%, #1e3a7a 100%);
+
 }
 
 .main-footer .newsletter-widget .text{
@@ -141,13 +144,15 @@
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
 	background: var(--color-two);
-    background: linear-gradient(to top right, var(--color-two) 0%, var(--color-seven) 100%);
+    /* background: linear-gradient(to top right, var(--color-two) 0%, var(--color-seven) 100%); */
+	background: linear-gradient(to left, #172f62 0%, #1e3a7a 100%);
 }
 
 .main-footer .email-box .form-group button:hover{
 	color:var(--white-color);
 	background: var(--color-two);
-    background: linear-gradient(to top right, var(--color-seven) 0%, var(--color-two) 100%);
+    /* background: linear-gradient(to top right, var(--color-seven) 0%, var(--color-two) 100%); */
+	background: linear-gradient(to left, #172f62 0%, #1e3a7a 100%);
 }
 
 .newsletter-widget .social-box{
@@ -194,7 +199,8 @@
 	position:absolute;
 	left:0px;
 	top:5px;
-	color:#005df7;
+	/* color:#005df7; */
+	color: linear-gradient(to left, #172f62 0%, #1e3a7a 100%);
 }
 
 .main-footer .contact-widget .contact-list li:last-child{
@@ -259,5 +265,5 @@
 }
 
 .main-footer .footer-bottom .copyright a{
-	color:#008bf7;
+	color: #ff6700;
 }
