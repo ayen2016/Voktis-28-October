@@ -1341,7 +1341,7 @@ img{
 	font-weight:600;
 	overflow: hidden;
 	text-align:center;
-	padding: 18px 36px;
+	padding: 24px 36px;
 	display:inline-block;
 	color: var(--white-color);
 	font-size: var(--font-16);
@@ -2146,4 +2146,5 @@ img{
 .ui-menu-item:hover{
 	background-color:var(--main-color);
 }
+
 
