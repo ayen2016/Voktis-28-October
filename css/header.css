@@ -850,17 +850,19 @@
 
 /* ayen added */
 
-background-image: -webkit-gradient(linear, left top, left bottom, from(#0D2B8C), to(#1475F7));
+/* background-image: -webkit-gradient(linear, left top, left bottom, from(#0D2B8C), to(#1475F7));
 background-image: -webkit-linear-gradient(to left, #0D2B8C, #1475F7);
 background-image: -moz-linear-gradient(to left, #0D2B8C, #1475F7);
 background-image: -ms-linear-gradient(to left, #0D2B8C, #1475F7);
 background-image: -o-linear-gradient(to left, #0D2B8C, #1475F7);
 background-image: linear-gradient(to left, #0D2B8C, #1475F7);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0D2B8C', endColorStr='#1475F7');
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0D2B8C', endColorStr='#1475F7'); */
 
 
 /* Ayen added stop */
 
+
+background-color: #172F62;
 
 
 
@@ -890,15 +892,18 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0D2B8C', endC
 
 /* New by ayen added */
 
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#0D2B8C), to(#1475F7));
+	/* background-image: -webkit-gradient(linear, left top, left bottom, from(#0D2B8C), to(#1475F7));
     background-image: -webkit-linear-gradient(to left, #0D2B8C, #1475F7);
 	background-image: -moz-linear-gradient(to left, #0D2B8C, #1475F7);
 	background-image: -ms-linear-gradient(to left, #0D2B8C, #1475F7);
 	background-image: -o-linear-gradient(to left, #0D2B8C, #1475F7);
 	background-image: linear-gradient(to left, #0D2B8C, #1475F7);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0D2B8C', endColorStr='#1475F7');
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0D2B8C', endColorStr='#1475F7'); */
 
 /* New by ayen stop and at to on comment the previous one with purple */
+
+
+background-color: #172F62;
 
 }
 
@@ -1211,8 +1216,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0D2B8C', endC
 	height:5px;
 	border-radius:0px;
 	transform: translateX(0%);
-	background: var(--color-thirtytwo);
-	background: linear-gradient(to top left, var(--color-thirtythree) 0%, var(--color-thirtytwo) 100%);
+	/* /* background: var(--color-thirtytwo); */
+	/* background: linear-gradient(to top left, var(--color-thirtythree) 0%, var(--color-thirtytwo) 100%); */ */
+	background: #172f62;
+	background: linear-gradient(to top left, #172f62 0%, #172f62 100%);
+	
 }
 
 .header-style-two .main-menu .navigation > li.current > a:before{
@@ -1222,7 +1230,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0D2B8C', endC
 .header-style-two .main-menu .navigation > li > ul > li:hover > a,
 .header-style-two .main-menu .navigation > li > ul > li.dropdown:hover > a:after,
 .header-style-two .main-menu .navigation > li > ul > li > ul > li:hover > a{
-	color:var(--color-thirtythree);
+	/* color:var(--color-thirtythree); */
+	color:#172F62;
 }
 
 .header-style-two .main-menu .navigation > li.dropdown > a:after{
