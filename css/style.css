@@ -3656,7 +3656,8 @@
 	height:6px;
 	opacity:0;
 	border-radius:50px;
-	background-color:#2a41e8;
+	/* background-color:#2a41e8; */
+	background-color: #ff6700;
 	transition:all 0.3s ease;
 	-moz-transition:all 0.3s ease;
 	-webkit-transition:all 0.3s ease;
@@ -9108,3 +9109,4 @@ a{
 	background-image: -webkit-linear-gradient(left, #0c65f8 0%, #1229ba 100%);
 	background-image: linear-gradient(to right, #0c65f8 0%, #1229ba 100%);
 }
+
