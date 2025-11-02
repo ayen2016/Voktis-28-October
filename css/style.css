@@ -7559,10 +7559,12 @@
 }
 
 .cat-list li a:hover,
-.cat-list li.active a{
+.cat-list li.active 
+a{
 	color:var(--white-color);
 	background-color:var(--main-color);
-	border-color:var(--color-seventysix);
+	/* border-color:var(--color-seventysix); */
+	border-color: #ff6700;
 }
 
 /* Contact Widget */
@@ -7577,7 +7579,8 @@
 .contact-widget .title{
 	position:relative;
 	font-size:var(--font-16);
-	color:var(--color-seventyseven);
+	/* color:var(--color-seventyseven); */
+	color: #ffffff;
 }
 
 .contact-widget .help{
@@ -7630,7 +7633,8 @@
 	font-size:var(--font-16);
 	color:var(--white-color);
 	background: var(--color-sixtyseven);
-    background: linear-gradient(to left, var(--color-sixtyeight) 0%, var(--color-sixtyseven) 100%);
+    /* background: linear-gradient(to left, var(--color-sixtyeight) 0%, var(--color-sixtyseven) 100%); */
+	background-color: #172f62;
 }
 
 /***
@@ -7723,7 +7727,8 @@
 }
 
 .feature-two_heading span{
-	color:var(--color-seventysix);
+	/* color:var(--color-seventysix); */
+	color: #ff6700;
 }
 
 .feature-two_text{
