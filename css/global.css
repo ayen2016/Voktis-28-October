@@ -828,7 +828,7 @@
 	background-color:#ffffff;
 	background-position:center center;
 	background-repeat:no-repeat;
-	background-image:url(../images/icons/preloader.svg);
+	background-image:url(../images/icons/Preloder\ Gif\ voktis.gif);
 	background-size:80px;
 }
 
@@ -1341,6 +1341,7 @@ img{
 	font-weight:600;
 	overflow: hidden;
 	text-align:center;
+	
 	padding: 24px 36px;
 	display:inline-block;
 	color: var(--white-color);
@@ -2146,5 +2147,4 @@ img{
 .ui-menu-item:hover{
 	background-color:var(--main-color);
 }
-
 
